@@ -1,0 +1,93 @@
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video 
+{ margin:0;padding:0;border:0; outline:0; font-size:100%; vertical-align:baseline; background:transparent; }                 
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section 
+{ display:block; }
+input:focus, textarea:focus {outline: none;}
+li {list-style: none;} a:hover, a {text-decoration: none; color: inherit;}
+h1,h2,h3,h4,h5,h6,p,li {text-align: left;}
+
+@font-face {
+    font-family: 'Gnuolane';
+    src: url('fonts/lane-webfont.eot?');
+    src: url('fonts/lane-webfont.eot?iefix') format('eot'),
+         url('fonts/lane-webfont.woff') format('woff'),
+         url('fonts/lane-webfont.ttf') format('truetype'),
+         url('fonts/lane-webfont.svg#webfontuEnsOj0d') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'HN';
+    src: url('fonts/helveticaneue-webfont.eot');
+    src: url('fonts/helveticaneue-webfont.eot?iefix') format('eot'),
+         url('fonts/helveticaneue-webfont.woff') format('woff'),
+         url('fonts/helveticaneue-webfont.ttf') format('truetype'),
+         url('fonts/helveticaneue-webfont.svg#webfontnvhRePth') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/**** Base styles ****/
+
+p, li {
+  font: normal 14px/20px HN, Georgia;
+  color: #AF4925;
+}
+
+p a, li a {
+  color: #D85A2E;
+}
+
+p a:hover, li a:hover {
+text-decoration: underline;
+  color: #D85A2E;
+}
+
+html {
+  padding: 0 10px;
+}
+
+body {
+  background-color: #EAE2DF;
+}
+
+header[role="banner"] {
+  margin-top: 50px;
+  padding-bottom: 30px;
+  border-bottom: 1px dotted #D85A2E;
+}
+
+header[role="banner"] p {
+margin-bottom: 10px;
+}
+
+article {
+padding: 20px 0;
+}
+
+article p {
+font: normal 12px/12px HN, Georgia;
+text-align: center;
+margin-bottom: 30px;
+margin-top: 10px;
+}
+
+article img {
+max-width: 95%;
+border: 10px solid #fff;
+margin-top: 20px;
+}
+
+
+.center {
+  padding: 0px 0px 0px 0;
+  margin: 0px auto 0px;
+  max-width: 800px;
+  text-align: center;
+}
+
+/* >> The Magnificent CLEARFIX: Updated to prevent margin-collapsing on child elements << j.mp/bestclearfix */
+.clearfix:before, .clearfix:after { content: "\0020"; display: block; height: 0; visibility: hidden; }
+.clearfix:after { clear: both; }
+/* fix clearfix: blueprintcss.lighthouseapp.com/projects/15318/tickets/5-extra-margin-padding-bottom-of-page */
+.clearfix { zoom: 1;}
